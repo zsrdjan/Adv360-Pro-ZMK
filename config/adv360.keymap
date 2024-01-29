@@ -11,8 +11,8 @@
 / {
     behaviors {
         #include "macros.dtsi"
-      #include "version.dtsi"
-      #ifndef VERSION_MACRO
+        #include "version.dtsi"
+        #ifndef VERSION_MACRO
 
         macro_ver: macro_ver {
             compatible = "zmk,behavior-macro";
@@ -59,7 +59,7 @@
             &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T      &none                                                           &none      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤  ╭──────────┬──────────╮  ╭──────────┬──────────╮  ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┼──────────┤
         //│  Esc     │  A       │  S       │  D       │  F       │  G       │  2       │  │  Ctrl    │  Alt     │  │  Win     │  Ctrl    │  │  4       │  H       │  J       │  K       │  L       │  ;       │  '       │
-            &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G      &none         &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL     &none      &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+            &kp ESC    &kp A    WHRML(S,         D,         F)      &kp G      &none         &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL     &none      &kp H   WHRMR(J,        K,         L)      &kp SEMI   &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────╯  ╰──────────┼──────────┤  ├──────────┼──────────╯  ╰──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────├
         //│  Shift   │  Z       │  X       │  C       │  V       │  B       │                        │  Home    │  │  Page Up │                        │  N       │  M       │  , <     │  . >     │  /       │  Shift   │  
             &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                               &kp HOME      &kp PG_UP                           &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
