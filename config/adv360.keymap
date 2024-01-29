@@ -5,8 +5,8 @@
 #include <dt-bindings/zmk/rgb.h>
 
 // Home row mods macro
-#define WHRML(k2,k3,k4) &ht LALT k2  &ht LGUI k3  &ht LCTRL k4
-#define WHRMR(k1,k2,k3) &ht RCTRL k1  &ht RGUI k2  &ht RALT k3
+#define WHRML(k2,k3,k4) &hm LALT k2  &hm LGUI k3  &hm LCTRL k4
+#define WHRMR(k1,k2,k3) &hm RCTRL k1  &hm RGUI k2  &hm RALT k3
 
 / {
     behaviors {
