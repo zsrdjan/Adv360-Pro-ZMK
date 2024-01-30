@@ -74,7 +74,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮                                                    ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  = +     │  1       │  2       │  3       │  4       │  5       │          │                                                    │  Mod     │  6       │  Num     │  =       │  /       │  *       │  -       │
-            &kp EQUAL  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &trans                                                          &mo 3  &kp N6   &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+            &kp EQUAL  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &trans                                                          &mo 3      &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤                                                    ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Tab     │  Q       │  W       │  E       │  R       │  T       │          │                                                    │          │  Y       │  7       │  8       │  9       │  -       │  /       │
             &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T      &none                                                           &none      &kp Y      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS &kp BSLH
@@ -127,7 +127,7 @@
         //│          │          │          │          │          │          │                        │          │  │          │                        │          │          │          │          │          │          │  
             &none      &none      &none      &none      &macro_ver &none                               &none         &none                               &none      &none      &none      &none      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────╯  ╭──────────┬──────────┼──────────┤  ╭──────────┼──────────┬──────────╮  ╰──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Fn      │  ` ~     │  Caps L  │  Left    │  Right   │             │ Backspc  │  Del     │  End     │  │ Page Dwn │Light Tog │ Rgb Tog  │             │Light Inc │Light Dec │          │          │          │
+        //│          │          │          │          │          │             │          │          │          │  │          │Light Tog │ Rgb Tog  │             │Light Inc │Light Dec │          │          │          │
             &none      &none      &none      &none      &none                    &none      &none      &none         &none     &bl BL_TOG &rgb_ug RGB_TOG           &bl BL_INC &bl BL_DEC &none      &none      &none
         //╰──────────┴──────────┴──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯  ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────┴──────────┴──────────╯
             >;
