@@ -11,11 +11,12 @@
 #define HYP(key) LS(LC(LA(LG(key))))
 #define HYPER    LS(LC(LA(LGUI)))
 
-#define BROWSER_SEARCH LG(F) 
-#define BROWSER_NEWTAB LG(T) 
-#define BROWSER_CLOSETTAB LG(W) 
-#define BROWSER_NEXTTAB LG(LA(RIGHT))
-#define BROWSER_PREVTAB LG(LA(LEFT))
+// Browser shortcuts
+#define B_SEARCH LG(F) 
+#define B_NEWTAB LG(T) 
+#define B_CLOSETTAB LG(W) 
+#define B_NEXTTAB LG(LA(RIGHT))
+#define B_PREVTAB LG(LA(LEFT))
 
 &mt {
     tapping-term-ms = <210>;
@@ -46,7 +47,8 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
+            quick_tap_ms = <200>;
+            require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -57,7 +59,6 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
         tri_layer {
             if-layers = <1 2>;
             then-layer = <4>;
@@ -83,7 +84,7 @@
             &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                               &kp HOME      &kp PG_UP                           &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────╯  ╭──────────┬──────────┼──────────┤  ╭──────────┼──────────┬──────────╮  ╰──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Fn      │  ` ~     │  Caps L  │  Left    │  Right   │             │ Backspc  │  Del     │  End     │  │ Page Dwn │ Enter    │ Space    │             │  Up      │  Down    │  [ {     │  ] }     │  Fn      │
-            &tog 2     &kp GRAVE  &kp CAPS   &kp LEFT   &kp RIGHT               &lt 1 BSPC  &kp DEL    &kp END     &kp PG_DN  &kp ENTER  &lt 2 SPACE              &kp UP     &kp DOWN   &kp LBKT   &kp RBKT   &mo 2
+            &tog 2     &kp GRAVE  &kp CAPS   &kp LEFT   &kp RIGHT               &lt 1 BSPC  &kp DEL    &kp END     &kp PG_DN  &kp ENTER  &lt 2 SPACE                &kp UP     &kp DOWN   &kp LBKT   &kp RBKT   &mo 2
         //╰──────────┴──────────┴──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯  ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────┴──────────┴──────────╯
             >;
         };
@@ -104,7 +105,7 @@
             &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                               &kp HOME      &kp PG_UP                           &kp N      &kp KP_N1  &kp KP_N2   &kp KP_N3 &kp KP_ENTER &kp RSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────╯  ╭──────────┬──────────┼──────────┤  ╭──────────┼──────────┬──────────╮  ╰──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Fn      │  ` ~     │  Caps L  │  Left    │  Right   │             │ Backspc  │  Del     │  End     │  │ Page Dwn │ Enter    │ 0        │             │  Up      │  Down    │  .       │  ] }     │  Fn      │
-            &tog 2      &kp GRAVE  &kp CAPS   &kp LEFT   &kp RIGHT               &lt 1 BSPC  &kp DEL  &kp END      &kp PG_DN  &kp ENTER  &lt 2 KP_N0                &kp UP     &kp DOWN   &kp KP_DOT &kp RBKT   &mo 2
+            &tog 2     &kp GRAVE  &kp CAPS   &kp LEFT   &kp RIGHT               &lt 1 BSPC  &kp DEL  &kp END        &kp PG_DN  &kp ENTER  &lt 2 KP_N0                &kp UP     &kp DOWN   &kp KP_DOT &kp RBKT   &mo 2
         //╰──────────┴──────────┴──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯  ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────┴──────────┴──────────╯
             >;
         };
@@ -112,14 +113,14 @@
         fn {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮                                                    ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  F1      │  F2      │  F3      │  F4      │  F5      │  F6      │  Kp tog  │                                                    │  Mod     │  F7      │  F8      │  F9      │  F10     │  F11     │  F12     │
-            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &tog 1                                                          &mo 4      &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12
+        //│          │  F1      │  F2      │  F3      │  F4      │  F5      │  Kp tog  │                                                    │  Mod     │  F7      │  F8      │  F9      │  F10     │  F11     │  F12     │
+            &trans     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &tog 1                                                          &mo 4      &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤                                                    ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │          │          │                                                    │          │          │          │          │          │          │          │
-            &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12    &none                                                           &none      &trans     &trans     &trans     &trans     &trans     &trans
+        //│          │  F6      │  F7      │  F8      │  F9      │  F10     │          │                                                    │          │          │          │          │          │          │          │
+            &trans     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &none                                                           &none      &trans     &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤  ╭──────────┬──────────╮  ╭──────────┬──────────╮  ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┼──────────┤
-        //│          │          │          │          │          │          │          │  │          │          │  │          │          │  │          │          │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans     &trans     &none         &trans     &trans        &trans     &trans        &none      &trans     &trans     &trans     &trans     &trans     &trans
+        //│          │  F11     │  F12     │  Print   │  HOME    │  END     │          │  │          │          │  │          │          │  │          │          │          │          │          │          │          │
+            &trans     &kp F11    &kp F12    &kp PSCRN  &kp HOME   &kp END    &none         &trans     &trans        &trans     &trans        &none      &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────╯  ╰──────────┼──────────┤  ├──────────┼──────────╯  ╰──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────├
         //│          │          │          │          │          │          │                        │          │  │          │                        │          │          │          │          │          │          │  
             &trans     &trans     &trans     &trans     &trans     &trans                              &trans        &trans                              &trans     &trans     &trans     &trans     &trans     &trans
@@ -136,17 +137,17 @@
         //│          │          │          │          │          │          │  Kp tog  │                                                    │  Mod     │  F7      │  F8      │  F9      │  F10     │  F11     │  F12     │
             &trans     &trans     &trans     &trans     &trans     &trans     &tog 1                                                          &mo 4      &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤                                                    ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │          │          │                                                    │          │          │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans     &trans     &none                                                           &none      &trans     &trans     &trans     &trans     &trans     &trans
+        //│          │  !       │  @       │  {       │  }       │  |       │          │                                                    │          │          │          │          │          │          │          │
+            &trans     &kp EXCL   &kp AT     &kp LBRC   &kp RBRC   &kp PIPE    &none                                                           &none      &trans     &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤  ╭──────────┬──────────╮  ╭──────────┬──────────╮  ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┼──────────┤
-        //│          │          │          │          │          │          │          │  │          │          │  │          │          │  │          │          │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans     &trans     &none         &trans     &trans        &trans     &trans        &none      &trans     &trans     &trans     &trans     &trans     &trans
+        //│          │  &       │  $       │  (       │  )       │  ` ~     │          │  │          │          │  │          │          │  │          │          │          │          │          │          │          │
+            &trans     &kp AMPS   &kp DOLLAR &kp LPAR   &kp RPAR   &kp GRAVE   &none        &trans     &trans        &trans     &trans        &none      &trans     &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────╯  ╰──────────┼──────────┤  ├──────────┼──────────╯  ╰──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────├
-        //│          │          │          │          │          │          │                        │          │  │          │                        │          │          │          │          │          │          │  
-            &trans     &trans     &trans     &trans     &trans     &trans                              &trans        &trans                              &trans     &trans     &trans     &trans     &trans     &trans
+        //│          │  #       │  ^       │  [       │ ]        │  `       │                        │          │  │          │                        │          │          │          │          │          │          │  
+            &trans     &kp HASH   &kp CARET  &kp LBKT   &kp RBKT   &kp TILDE                              &trans        &trans                            &trans     &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────╯  ╭──────────┬──────────┼──────────┤  ╭──────────┼──────────┬──────────╮  ╰──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │             │          │          │          │  │          │          │          │             │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans                   &trans     &trans     &trans        &trans     &trans     &trans                   &trans     &trans     &trans     &trans     &trans
+            &trans     &trans     &trans     &trans     &trans                   &trans     &trans     &trans        &trans     &trans     &trans                    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯  ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────┴──────────┴──────────╯
             >;
         };
