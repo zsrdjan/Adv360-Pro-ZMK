@@ -419,6 +419,37 @@ path.combo {
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
 <text x="0" y="0" class="key tap">fn</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="756" y="127" width="28" height="26" class="combo"/>
+<text x="770" y="140" class="combo tap"><tspan style="font-size: 78%">&amp;del_word</tspan></text>
+</g>
+<g class="combo combopos-1">
+<path d="M504,196 l219,0" class="combo"/>
+<path d="M504,196 l-219,0" class="combo"/>
+<rect rx="6" ry="6" x="490" y="183" width="28" height="26" class="combo"/>
+<text x="504" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="756" y="183" width="28" height="26" class="combo"/>
+<text x="770" y="196" class="combo tap">-</text>
+<text x="770" y="207" class="combo hold">_</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap">LC(C)</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="280" y="183" width="28" height="26" class="combo"/>
+<text x="294" y="196" class="combo tap">LC(V)</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="168" y="183" width="28" height="26" class="combo"/>
+<text x="182" y="196" class="combo tap">LC(X)</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="224" y="71" width="28" height="26" class="combo"/>
+<text x="238" y="84" class="combo tap"><tspan style="font-size: 60%">&amp;c_alt_tab_mode</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 493)" class="layer-keypad">
@@ -767,6 +798,37 @@ path.combo {
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
 <text x="0" y="0" class="key tap">fn</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="756" y="127" width="28" height="26" class="combo"/>
+<text x="770" y="140" class="combo tap"><tspan style="font-size: 78%">&amp;del_word</tspan></text>
+</g>
+<g class="combo combopos-1">
+<path d="M504,196 l219,0" class="combo"/>
+<path d="M504,196 l-219,0" class="combo"/>
+<rect rx="6" ry="6" x="490" y="183" width="28" height="26" class="combo"/>
+<text x="504" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="756" y="183" width="28" height="26" class="combo"/>
+<text x="770" y="196" class="combo tap">-</text>
+<text x="770" y="207" class="combo hold">_</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap">LC(C)</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="280" y="183" width="28" height="26" class="combo"/>
+<text x="294" y="196" class="combo tap">LC(V)</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="168" y="183" width="28" height="26" class="combo"/>
+<text x="182" y="196" class="combo tap">LC(X)</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="224" y="71" width="28" height="26" class="combo"/>
+<text x="238" y="84" class="combo tap"><tspan style="font-size: 60%">&amp;c_alt_tab_mode</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 986)" class="layer-fn">
@@ -1071,6 +1133,37 @@ path.combo {
 <g transform="translate(973, 266)" class="key trans keypos-75">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="756" y="127" width="28" height="26" class="combo"/>
+<text x="770" y="140" class="combo tap"><tspan style="font-size: 78%">&amp;del_word</tspan></text>
+</g>
+<g class="combo combopos-1">
+<path d="M504,196 l219,0" class="combo"/>
+<path d="M504,196 l-219,0" class="combo"/>
+<rect rx="6" ry="6" x="490" y="183" width="28" height="26" class="combo"/>
+<text x="504" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="756" y="183" width="28" height="26" class="combo"/>
+<text x="770" y="196" class="combo tap">-</text>
+<text x="770" y="207" class="combo hold">_</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap">LC(C)</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="280" y="183" width="28" height="26" class="combo"/>
+<text x="294" y="196" class="combo tap">LC(V)</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="168" y="183" width="28" height="26" class="combo"/>
+<text x="182" y="196" class="combo tap">LC(X)</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="224" y="71" width="28" height="26" class="combo"/>
+<text x="238" y="84" class="combo tap"><tspan style="font-size: 60%">&amp;c_alt_tab_mode</tspan></text>
 </g>
 </g>
 </g>
@@ -1378,6 +1471,37 @@ path.combo {
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="756" y="127" width="28" height="26" class="combo"/>
+<text x="770" y="140" class="combo tap"><tspan style="font-size: 78%">&amp;del_word</tspan></text>
+</g>
+<g class="combo combopos-1">
+<path d="M504,196 l219,0" class="combo"/>
+<path d="M504,196 l-219,0" class="combo"/>
+<rect rx="6" ry="6" x="490" y="183" width="28" height="26" class="combo"/>
+<text x="504" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="756" y="183" width="28" height="26" class="combo"/>
+<text x="770" y="196" class="combo tap">-</text>
+<text x="770" y="207" class="combo hold">_</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap">LC(C)</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="280" y="183" width="28" height="26" class="combo"/>
+<text x="294" y="196" class="combo tap">LC(V)</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="168" y="183" width="28" height="26" class="combo"/>
+<text x="182" y="196" class="combo tap">LC(X)</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="224" y="71" width="28" height="26" class="combo"/>
+<text x="238" y="84" class="combo tap"><tspan style="font-size: 60%">&amp;c_alt_tab_mode</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1972)" class="layer-mod">
@@ -1643,6 +1767,37 @@ path.combo {
 </g>
 <g transform="translate(973, 266)" class="key keypos-75">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="756" y="127" width="28" height="26" class="combo"/>
+<text x="770" y="140" class="combo tap"><tspan style="font-size: 78%">&amp;del_word</tspan></text>
+</g>
+<g class="combo combopos-1">
+<path d="M504,196 l219,0" class="combo"/>
+<path d="M504,196 l-219,0" class="combo"/>
+<rect rx="6" ry="6" x="490" y="183" width="28" height="26" class="combo"/>
+<text x="504" y="196" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="756" y="183" width="28" height="26" class="combo"/>
+<text x="770" y="196" class="combo tap">-</text>
+<text x="770" y="207" class="combo hold">_</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="224" y="183" width="28" height="26" class="combo"/>
+<text x="238" y="196" class="combo tap">LC(C)</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="280" y="183" width="28" height="26" class="combo"/>
+<text x="294" y="196" class="combo tap">LC(V)</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="168" y="183" width="28" height="26" class="combo"/>
+<text x="182" y="196" class="combo tap">LC(X)</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="224" y="71" width="28" height="26" class="combo"/>
+<text x="238" y="84" class="combo tap"><tspan style="font-size: 60%">&amp;c_alt_tab_mode</tspan></text>
 </g>
 </g>
 </g>

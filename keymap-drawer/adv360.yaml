@@ -385,3 +385,18 @@ layers:
   - ''
   - ''
   - ''
+combos:
+- p: [41, 42]
+  k: '&del_word'
+- p: [55, 50]
+  k: '&caps_word'
+- p: [55, 56]
+  k: {t: '-', h: _}
+- p: [50, 49]
+  k: LC(C)
+- p: [50, 51]
+  k: LC(V)
+- p: [48, 49]
+  k: LC(X)
+- p: [17, 18]
+  k: '&c_alt_tab_mode'
