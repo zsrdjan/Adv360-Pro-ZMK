@@ -56,9 +56,101 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        b_caps_word_lock: b_caps_word_lock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "B_CAPS_WORD_LOCK";
+            #binding-cells = <0>;
+            bindings = <&caps_word>, <&kp CAPSLOCK>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        c_del_word {
+            bindings = <&del_word>;
+            key-positions = <41 42>;
+        };
+
+        c_capsword {
+            bindings = <&caps_word>;
+            key-positions = <55 50>;
+        };
+
+        c_underscore {
+            bindings = <&mt UNDER MINUS>;
+            key-positions = <55 56>;
+        };
+
+        c_copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <50 49>;
+        };
+
+        c_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <50 51>;
+        };
+
+        c_cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <48 49>;
+        };
+
+        c_alt_tab {
+            bindings = <&c_alt_tab_mode>;
+            key-positions = <17 18>;
+            require-prior-idle-ms = <500>;
+        };
     };
 
     macros {
+        del_word: del_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(BACKSPACE)>;
+            label = "DEL_WORD";
+        };
+
+        del_fword: del_fword {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(DELETE)>;
+            label = "DEL_FWORD";
+        };
+
+        clear_mods: clear_mods {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LWIN &kp RWIN &kp LALT &kp RALT>;
+
+            label = "CLEAR_MODS";
+        };
+
+        ctrl_alt_del: ctrl_alt_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(DEL))>;
+            label = "CTRL_ALT_DEL";
+        };
+
+        c_alt_tab_mode: c_alt_tab_mode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 2 &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 2 &kp LEFT_ALT>;
+
+            label = "C_ALT_TAB_MODE";
+        };
     };
 
     conditional_layers {
