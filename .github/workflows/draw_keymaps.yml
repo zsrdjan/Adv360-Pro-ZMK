@@ -15,6 +15,7 @@ jobs:
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
+      amend_commit: true
       commit_message: "[Draw] ${{ github.event.head_commit.message }}"
       keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
