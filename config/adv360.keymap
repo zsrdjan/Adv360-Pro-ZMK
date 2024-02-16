@@ -50,9 +50,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <200>;
-            require-prior-idle-ms = <150>;
+            tapping-term-ms = <250>;
+            quick_tap_ms = <150>;
+            require-prior-idle-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -180,7 +180,7 @@
             &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                               &kp HOME      &kp PG_UP                           &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────╯  ╭──────────┬──────────┼──────────┤  ╭──────────┼──────────┬──────────╮  ╰──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Fn      │  ` ~     │  Caps L  │  Left    │  Right   │             │ Backspc  │  Del     │  End     │  │ Page Dwn │ Enter    │ Space    │             │  Up      │  Down    │  [ {     │  ] }     │  Fn      │
-            &mo FUNC  &kp GRAVE  &kp CAPS   &kp LEFT   &kp RIGHT              &lt NUM BSPC  &kp DEL    &kp END     &kp PG_DN  &kp ENTER  &lt FUNC SPACE             &kp UP     &kp DOWN   &kp LBKT   &kp RBKT   &mo FUNC
+            &mo FUNC  &kp GRAVE  &kp CAPS   &kp LEFT   &kp RIGHT              &lt NUM BSPC  &lt FUNC DEL &kp END     &kp PG_DN  &kp ENTER  &lt FUNC SPACE             &kp UP     &kp DOWN   &kp LBKT   &kp RBKT   &mo FUNC
         //╰──────────┴──────────┴──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯  ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────┴──────────┴──────────╯
             >;
         };
