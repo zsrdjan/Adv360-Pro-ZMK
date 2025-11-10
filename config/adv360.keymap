@@ -13,24 +13,13 @@
       #include "version.dtsi"
 
       // Home row mods - GACS (GUI/Alt/Ctrl/Shift) on left, SCAG on right
-      hm_l: homerow_mods_left {
+      hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS_LEFT";
+          label = "HOMEROW_MODS";
           #binding-cells = <2>;
-          tapping-term-ms = <280>;
-          quick-tap-ms = <175>;
-          require-prior-idle-ms = <150>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
-      
-      hm_r: homerow_mods_right {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS_RIGHT";
-          #binding-cells = <2>;
-          tapping-term-ms = <280>;
-          quick-tap-ms = <175>;
-          require-prior-idle-ms = <150>;
+          tapping-term-ms = <250>;
+          quick_tap_ms = <150>;
+          require-prior-idle-ms = <200>;
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
@@ -92,7 +81,7 @@
       bindings = <
         &kp EQUAL  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5  &tog 1                                                              &mo 3  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
         &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T   &none                                                               &none  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-        &kp ESC    &hm_l LGUI A &hm_l LALT S &hm_l LCTRL D &hm_l LSHFT F &kp G &none  &kp LCTRL &kp LALT  &kp LGUI  &kp RCTRL            &none  &kp H   &hm_r RSHFT J &hm_r RCTRL K &hm_r RALT L &hm_r RGUI SEMI &kp SQT
+        &kp ESC    &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G &none  &kp LCTRL &kp LALT  &kp LGUI  &kp RCTRL            &none  &kp H   &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &kp SQT
         &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                             &kp HOME  &kp PG_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
         &mo 2      &kp GRAVE  &b_caps_word_lock &kp LEFT &kp RIGHT            &lt 4 BSPC &kp DEL &kp END   &kp PG_DN &lt 5 ENTER &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
       >;
@@ -150,10 +139,10 @@
     glaze_layer {
       display-name = "Glaze";
       bindings = <
-        &trans &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4) &kp LA(N5) &trans                                           &trans &kp LA(N6) &kp LA(N7) &kp LA(N8) &kp LA(N9) &kp LA(N0) &trans
-        &trans &kp LA(Q)  &trans     &trans     &trans     &kp LA(T)  &trans                                           &trans &trans     &kp LA(U)  &kp LA(I)  &kp LA(O)  &trans     &trans
-        &trans &trans     &trans     &trans     &kp LA(F)  &trans     &trans        &trans &trans &trans &trans        &trans &kp LA(H)  &kp LA(J)  &kp LA(K)  &kp LA(L)  &trans     &trans
-        &trans &trans     &trans     &trans     &kp LA(V)  &trans                          &trans &trans                      &trans     &kp LA(M)  &trans     &trans     &trans     &trans
+        &trans &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4) &kp LA(N5) &trans                                           &trans &kp LA(N6) &kp LA(N7) &kp LA(N8) &kp LA(N9) &kp LA(N0)    &trans
+        &trans &kp LA(Q)  &trans     &trans     &trans     &kp LA(T)  &trans                                           &trans &trans     &kp LA(U)  &kp LA(I)  &kp LA(O)  &trans        &trans
+        &trans &trans     &trans     &trans     &kp LA(F)  &trans     &trans        &trans &trans &trans &trans        &trans &trans     &kp LA(J)  &kp LA(K)  &kp LA(L)  &kp LA(SEMI)  &trans
+        &trans &trans     &trans     &trans     &kp LA(V)  &trans                          &trans &trans                      &trans     &kp LA(M)  &trans     &trans     &trans        &trans
         &trans &trans     &trans     &trans     &trans                       &trans &trans &trans &trans &trans &trans              &trans     &trans     &trans     &trans     &trans
       >;
     };
