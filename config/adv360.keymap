@@ -171,10 +171,10 @@
         glaze_shift_layer {
             display-name = "Glaze-Shift";
             bindings = <
-        &trans  &kp LA(LSHFT(N1))  &kp LA(LSHFT(N2))  &kp LA(LSHFT(N3))  &kp LA(LSHFT(N4))  &kp LA(LSHFT(N5))  &trans                                           &trans  &kp LA(LSHFT(N6))  &kp LA(LSHFT(N7))  &kp LA(LSHFT(N8))  &kp LA(LSHFT(N9))  &kp LA(LSHFT(N0))    &trans
-        &trans  &kp LA(LSHFT(Q))   &kp LA(LSHFT(W))   &kp LA(LSHFT(E))   &kp LA(LSHFT(R))   &kp LA(LSHFT(T))   &trans                                           &trans  &trans      &kp LA(LSHFT(U))   &kp LA(LSHFT(I))   &kp LA(LSHFT(O))   &kp LA(LSHFT(P))     &trans
-        &tog 6  &kp LA(LSHFT(A))   &kp LA(LSHFT(S))   &kp LA(LSHFT(D))   &kp LA(LSHFT(F))   &trans             &trans  &trans  &trans  &trans  &trans           &trans  &trans      &kp LA(LSHFT(J))   &kp LA(LSHFT(K))   &kp LA(LSHFT(L))   &kp LA(LSHFT(SEMI))  &tog 8
-        &trans  &trans             &trans             &trans             &kp LA(LSHFT(V))   &trans                      &trans  &trans                           &trans      &kp LA(M)   &trans      &trans      &trans        &trans 
+        &trans  &kp LA(LS(N1))  &kp LA(LS(N2))  &kp LA(LS(N3))  &kp LA(LS(N4))  &kp LA(LS(N5))  &trans                                           &trans  &kp LA(LS(N6))  &kp LA(LS(N7))  &kp LA(LS(N8))  &kp LA(LS(N9))  &kp LA(LS(N0))    &trans
+        &trans  &kp LA(LS(Q))   &kp LA(LS(W))   &kp LA(LS(E))   &kp LA(LS(R))   &kp LA(LS(T))   &trans                                           &trans  &trans      &kp LA(LS(U))   &kp LA(LS(I))   &kp LA(LS(O))   &kp LA(LS(P))     &trans
+        &tog 6  &kp LA(LS(A))   &kp LA(LS(S))   &kp LA(LS(D))   &kp LA(LS(F))   &trans             &trans  &trans  &trans  &trans  &trans           &trans  &trans      &kp LA(LS(J))   &kp LA(LS(K))   &kp LA(LS(L))   &kp LA(LS(SEMI))  &tog 8
+        &trans  &trans             &trans             &trans             &kp LA(LS(V))   &trans                      &trans  &trans                           &trans      &kp LA(LS(M))   &trans      &trans      &trans        &trans 
         &trans  &trans             &trans             &trans             &trans                                &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans      &trans      &trans      &trans
             >;
         };
