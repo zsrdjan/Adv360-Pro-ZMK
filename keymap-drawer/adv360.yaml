@@ -464,38 +464,38 @@ layers:
   - {t: ▽, type: trans}
   Glaze-Shift:
   - {t: ▽, type: trans}
-  - Alt+LSHFT(1)
-  - Alt+LSHFT(2)
-  - Alt+LSHFT(3)
-  - Alt+LSHFT(4)
-  - Alt+LSHFT(5)
+  - Alt+Sft+1
+  - Alt+Sft+2
+  - Alt+Sft+3
+  - Alt+Sft+4
+  - Alt+Sft+5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+LSHFT(6)
-  - Alt+LSHFT(7)
-  - Alt+LSHFT(8)
-  - Alt+LSHFT(9)
-  - Alt+LSHFT(0)
+  - Alt+Sft+6
+  - Alt+Sft+7
+  - Alt+Sft+8
+  - Alt+Sft+9
+  - Alt+Sft+0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+LSHFT(Q)
-  - Alt+LSHFT(W)
-  - Alt+LSHFT(E)
-  - Alt+LSHFT(R)
-  - Alt+LSHFT(T)
+  - Alt+Sft+Q
+  - Alt+Sft+W
+  - Alt+Sft+E
+  - Alt+Sft+R
+  - Alt+Sft+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+LSHFT(U)
-  - Alt+LSHFT(I)
-  - Alt+LSHFT(O)
-  - Alt+LSHFT(P)
+  - Alt+Sft+U
+  - Alt+Sft+I
+  - Alt+Sft+O
+  - Alt+Sft+P
   - {t: ▽, type: trans}
   - {t: Glaze-Shift, h: toggle}
-  - Alt+LSHFT(A)
-  - Alt+LSHFT(S)
-  - Alt+LSHFT(D)
-  - Alt+LSHFT(F)
+  - Alt+Sft+A
+  - Alt+Sft+S
+  - Alt+Sft+D
+  - Alt+Sft+F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -504,21 +504,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+LSHFT(J)
-  - Alt+LSHFT(K)
-  - Alt+LSHFT(L)
-  - Alt+LSHFT(SEMI)
+  - Alt+Sft+J
+  - Alt+Sft+K
+  - Alt+Sft+L
+  - Alt+Sft+;
   - {t: Mouse, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+LSHFT(V)
+  - Alt+Sft+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+M
+  - Alt+Sft+M
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
