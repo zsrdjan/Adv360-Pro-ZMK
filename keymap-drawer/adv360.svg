@@ -1861,9 +1861,12 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Alt+F</text>
 </g>
-<g transform="translate(322, 140)" class="key trans keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(322, 140)" class="key keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Glaze-</tspan><tspan x="0" dy="1.2em">Shift</tspan>
+</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(378, 140)" class="key trans keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1889,9 +1892,12 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(686, 140)" class="key trans keypos-40">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(686, 140)" class="key keypos-40">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Glaze-</tspan><tspan x="0" dy="1.2em">Shift</tspan>
+</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(742, 140)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1911,9 +1917,10 @@ path.combo {
 </g>
 <g transform="translate(973, 154)" class="key keypos-45">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
-<a href="#Mouse">
-<text x="0" y="0" class="key tap layer-activator">Mouse</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Glaze-</tspan><tspan x="0" dy="1.2em">Shift</tspan>
+</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(35, 210)" class="key trans keypos-46">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key trans"/>
@@ -2224,9 +2231,12 @@ path.combo {
 <tspan x="0" dy="-0.6em">Alt+Sft</tspan><tspan x="0" dy="1.2em">+F</tspan>
 </text>
 </g>
-<g transform="translate(322, 140)" class="key trans keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(322, 140)" class="key keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Glaze-</tspan><tspan x="0" dy="1.2em">Shift</tspan>
+</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(378, 140)" class="key trans keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2252,9 +2262,12 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(686, 140)" class="key trans keypos-40">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(686, 140)" class="key keypos-40">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Glaze-</tspan><tspan x="0" dy="1.2em">Shift</tspan>
+</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(742, 140)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -2282,9 +2295,10 @@ path.combo {
 </g>
 <g transform="translate(973, 154)" class="key keypos-45">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key"/>
-<a href="#Mouse">
-<text x="0" y="0" class="key tap layer-activator">Mouse</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Glaze-</tspan><tspan x="0" dy="1.2em">Shift</tspan>
+</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(35, 210)" class="key trans keypos-46">
 <rect rx="6" ry="6" x="-33" y="-26" width="66" height="52" class="key trans"/>

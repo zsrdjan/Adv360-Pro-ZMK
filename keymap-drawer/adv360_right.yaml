@@ -419,19 +419,19 @@ layers:
   - Alt+S
   - Alt+D
   - Alt+F
+  - {t: Glaze-Shift, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Glaze-Shift, h: toggle}
   - Alt+J
   - Alt+K
   - Alt+L
   - Alt+;
-  - {t: Mouse, h: toggle}
+  - {t: Glaze-Shift, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -496,19 +496,19 @@ layers:
   - Alt+Sft+S
   - Alt+Sft+D
   - Alt+Sft+F
+  - {t: Glaze-Shift, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Glaze-Shift, h: toggle}
   - Alt+Sft+J
   - Alt+Sft+K
   - Alt+Sft+L
   - Alt+Sft+;
-  - {t: Mouse, h: toggle}
+  - {t: Glaze-Shift, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
