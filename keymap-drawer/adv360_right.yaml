@@ -378,7 +378,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Dev
+  - Mouse
   - {t: ▽, type: trans}
   - Ctl+HOME
   - Ctl+END
@@ -387,61 +387,61 @@ layers:
   - {t: ▽, type: trans}
   Glaze:
   - {t: ▽, type: trans}
-  - Alt+1
-  - Alt+2
-  - Alt+3
-  - Alt+4
-  - Alt+5
+  - '&td_glaze_1'
+  - '&td_glaze_2'
+  - '&td_glaze_3'
+  - '&td_glaze_4'
+  - '&td_glaze_5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+6
-  - Alt+7
-  - Alt+8
-  - Alt+9
-  - Alt+0
+  - '&td_glaze_6'
+  - '&td_glaze_7'
+  - '&td_glaze_8'
+  - '&td_glaze_9'
+  - '&td_glaze_0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+Q
-  - Alt+W
-  - Alt+E
-  - Alt+R
-  - Alt+T
+  - '&td_glaze_q'
+  - '&td_glaze_w'
+  - '&td_glaze_e'
+  - '&td_glaze_r'
+  - '&td_glaze_t'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+U
-  - Alt+I
-  - Alt+O
-  - Alt+P
-  - {t: ▽, type: trans}
-  - {t: Glaze-Shift, h: toggle}
-  - Alt+A
-  - Alt+S
-  - Alt+D
-  - Alt+F
-  - {t: Glaze-Shift, h: toggle}
+  - '&td_glaze_u'
+  - '&td_glaze_i'
+  - '&td_glaze_o'
+  - '&td_glaze_p'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&td_glaze_a'
+  - '&td_glaze_s'
+  - '&td_glaze_d'
+  - '&td_glaze_f'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Glaze-Shift, h: toggle}
-  - Alt+J
-  - Alt+K
-  - Alt+L
-  - Alt+;
-  - {t: Glaze-Shift, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+V
+  - '&td_glaze_j'
+  - '&td_glaze_k'
+  - '&td_glaze_l'
+  - '&td_glaze_semi'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+M
+  - {t: ▽, type: trans}
+  - '&td_glaze_v'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&td_glaze_m'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -457,83 +457,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Glaze-Shift:
-  - {t: ▽, type: trans}
-  - Alt+Sft+1
-  - Alt+Sft+2
-  - Alt+Sft+3
-  - Alt+Sft+4
-  - Alt+Sft+5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+Sft+6
-  - Alt+Sft+7
-  - Alt+Sft+8
-  - Alt+Sft+9
-  - Alt+Sft+0
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+Sft+Q
-  - Alt+Sft+W
-  - Alt+Sft+E
-  - Alt+Sft+R
-  - Alt+Sft+T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+Sft+U
-  - Alt+Sft+I
-  - Alt+Sft+O
-  - Alt+Sft+P
-  - {t: ▽, type: trans}
-  - {t: Glaze-Shift, h: toggle}
-  - Alt+Sft+A
-  - Alt+Sft+S
-  - Alt+Sft+D
-  - Alt+Sft+F
-  - {t: Glaze-Shift, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: Glaze-Shift, h: toggle}
-  - Alt+Sft+J
-  - Alt+Sft+K
-  - Alt+Sft+L
-  - Alt+Sft+;
-  - {t: Glaze-Shift, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+Sft+V
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+Sft+M
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
