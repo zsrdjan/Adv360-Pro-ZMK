@@ -28,208 +28,48 @@
 
       // Tap-dance behaviors for Glaze layer
       // Single tap: Alt+key, Double tap: Alt+Shift+key
-      td_glaze_1: td_glaze_1 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N1)>, <&kp LA(LS(N1))>;
-      };
-
-      td_glaze_2: td_glaze_2 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N2)>, <&kp LA(LS(N2))>;
-      };
-
-      td_glaze_3: td_glaze_3 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N3)>, <&kp LA(LS(N3))>;
-      };
-
-      td_glaze_4: td_glaze_4 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N4)>, <&kp LA(LS(N4))>;
-      };
-
-      td_glaze_5: td_glaze_5 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N5)>, <&kp LA(LS(N5))>;
-      };
-
-      td_glaze_6: td_glaze_6 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N6)>, <&kp LA(LS(N6))>;
-      };
-
-      td_glaze_7: td_glaze_7 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N7)>, <&kp LA(LS(N7))>;
-      };
-
-      td_glaze_8: td_glaze_8 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N8)>, <&kp LA(LS(N8))>;
-      };
-
-      td_glaze_9: td_glaze_9 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N9)>, <&kp LA(LS(N9))>;
-      };
-
-      td_glaze_0: td_glaze_0 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(N0)>, <&kp LA(LS(N0))>;
-      };
-
-      td_glaze_q: td_glaze_q {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(Q)>, <&kp LA(LS(Q))>;
-      };
-
-      td_glaze_w: td_glaze_w {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(W)>, <&kp LA(LS(W))>;
-      };
-
-      td_glaze_e: td_glaze_e {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(E)>, <&kp LA(LS(E))>;
-      };
-
-      td_glaze_r: td_glaze_r {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(R)>, <&kp LA(LS(R))>;
-      };
-
-      td_glaze_t: td_glaze_t {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(T)>, <&kp LA(LS(T))>;
-      };
-
-      td_glaze_u: td_glaze_u {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(U)>, <&kp LA(LS(U))>;
-      };
-
-      td_glaze_i: td_glaze_i {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(I)>, <&kp LA(LS(I))>;
-      };
-
-      td_glaze_o: td_glaze_o {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(O)>, <&kp LA(LS(O))>;
-      };
-
-      td_glaze_p: td_glaze_p {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(P)>, <&kp LA(LS(P))>;
-      };
-
-      td_glaze_a: td_glaze_a {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(A)>, <&kp LA(LS(A))>;
-      };
-
-      td_glaze_s: td_glaze_s {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(S)>, <&kp LA(LS(S))>;
-      };
-
-      td_glaze_d: td_glaze_d {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(D)>, <&kp LA(LS(D))>;
-      };
-
-      td_glaze_f: td_glaze_f {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(F)>, <&kp LA(LS(F))>;
-      };
-
-      td_glaze_j: td_glaze_j {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(J)>, <&kp LA(LS(J))>;
-      };
-
-      td_glaze_k: td_glaze_k {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(K)>, <&kp LA(LS(K))>;
-      };
-
-      td_glaze_l: td_glaze_l {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(L)>, <&kp LA(LS(L))>;
-      };
-
-      td_glaze_semi: td_glaze_semi {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(SEMI)>, <&kp LA(LS(SEMI))>;
-      };
-
-      td_glaze_v: td_glaze_v {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(V)>, <&kp LA(LS(V))>;
-      };
-
-      td_glaze_m: td_glaze_m {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LA(M)>, <&kp LA(LS(M))>;
-      };
+      // Macro to create tap-dance behaviors for Glaze layer
+      // Single tap: Alt+key, Double tap: Alt+Shift+key
+      #define TD_GLAZE(name, key) \
+          td_glaze_##name: td_glaze_##name { \
+              compatible = "zmk,behavior-tap-dance"; \
+              #binding-cells = <0>; \
+              tapping-term-ms = <200>; \
+              bindings = <&kp LA(key)>, <&kp LA(LS(key))>; \
+          };
+      
+      // Number keys
+      TD_GLAZE(1, N1)
+      TD_GLAZE(2, N2)
+      TD_GLAZE(3, N3)
+      TD_GLAZE(4, N4)
+      TD_GLAZE(5, N5)
+      TD_GLAZE(6, N6)
+      TD_GLAZE(7, N7)
+      TD_GLAZE(8, N8)
+      TD_GLAZE(9, N9)
+      TD_GLAZE(0, N0)
+      
+      // Letter keys
+      TD_GLAZE(q, Q)
+      TD_GLAZE(w, W)
+      TD_GLAZE(e, E)
+      TD_GLAZE(r, R)
+      TD_GLAZE(t, T)
+      TD_GLAZE(u, U)
+      TD_GLAZE(i, I)
+      TD_GLAZE(o, O)
+      TD_GLAZE(p, P)
+      TD_GLAZE(a, A)
+      TD_GLAZE(s, S)
+      TD_GLAZE(d, D)
+      TD_GLAZE(f, F)
+      TD_GLAZE(j, J)
+      TD_GLAZE(k, K)
+      TD_GLAZE(l, L)
+      TD_GLAZE(semi, SEMI)
+      TD_GLAZE(v, V)
+      TD_GLAZE(m, M)
 
       // Home row mods - GACS (GUI/Alt/Ctrl/Shift) on left, SCAG on right
       hm: homerow_mods {
