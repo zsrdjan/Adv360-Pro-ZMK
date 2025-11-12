@@ -168,7 +168,7 @@
         // ============================================================================
         // Layer 6: GLAZE-Shift - GlazeWM window management (tap Space twice and hold)
         // ============================================================================
-        glaze_layer {
+        glaze_shift_layer {
             display-name = "Glaze-Shift";
             bindings = <
         &trans  &kp LA(LSHFT(N1))  &kp LA(LSHFT(N2))  &kp LA(LSHFT(N3))  &kp LA(LSHFT(N4))  &kp LA(LSHFT(N5))  &trans                                           &trans  &kp LA(LSHFT(N6))  &kp LA(LSHFT(N7))  &kp LA(LSHFT(N8))  &kp LA(LSHFT(N9))  &kp LA(LSHFT(N0))    &trans
