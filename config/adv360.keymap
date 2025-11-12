@@ -166,7 +166,7 @@
         };
         
         // ============================================================================
-        // Layer 6: GLAZE-Shift - GlazeWM window management (tap Space twice and hold)
+        // Layer 6: GLAZE-Shift - GlazeWM window management (hold Space and toggle with G or H)
         // ============================================================================
         glaze_shift_layer {
             display-name = "Glaze-Shift";
