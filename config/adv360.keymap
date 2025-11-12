@@ -34,7 +34,7 @@
           td_glaze_##name: td_glaze_##name { \
               compatible = "zmk,behavior-tap-dance"; \
               #binding-cells = <0>; \
-              tapping-term-ms = <200>; \
+              tapping-term-ms = <350>; \
               bindings = <&kp LA(key)>, <&kp LA(LS(key))>; \
           };
       
