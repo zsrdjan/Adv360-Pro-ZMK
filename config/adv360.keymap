@@ -38,6 +38,15 @@
           bindings = <&kp>, <&kp>;
       };
       
+      // Switching to Glaze Layers 5 and 6
+      td_glaze: td_glaze {
+          compatible = "zmk,behavior-tap-dance";
+          label = "TD_GLAZE";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&lt 5 SPACE>, <&lt 6 SPACE>;
+      };
+      
       // Smooth mouse acceleration
       mmv {
           compatible = "zmk,behavior-mouse-move";
@@ -90,8 +99,8 @@
         &kp EQUAL  &kp N1      &kp N2            &kp N3       &kp N4        &kp N5  &tog 1                                                                      &mo 3  &kp N6        &kp N7         &kp N8        &kp N9           &kp N0            &kp MINUS
         &kp TAB    &kp Q       &kp W             &kp E        &kp R         &kp T   &none                                                                       &none  &kp Y         &kp U          &kp I         &kp O            &kp P             &kp BSLH
         &kp ESC    &hm LGUI A  &hm LALT S        &hm LCTRL D  &hm LSHFT F   &kp G   &none      &kp LCTRL  &kp LALT   &kp LGUI   &kp RCTRL                      &none   &kp H         &hm RSHFT J    &hm RCTRL K   &hm RALT L       &hm RGUI SEMI     &kp SQT
-        &kp LSHFT  &kp Z       &kp X             &kp C        &lt 6 V       &kp B                         &kp HOME   &kp PG_UP                                         &kp N         &lt 7 M        &kp COMMA     &kp DOT          &kp FSLH          &kp RSHFT
-        &mo 2      &kp GRAVE   &b_caps_word_lock &kp LEFT     &kp RIGHT              &lt 4 BSPC &kp DEL &kp END    &kp PG_DN  &lt 2 ENTER  &lt 5 SPACE                 &kp UP        &kp DOWN       &kp LBKT      &kp RBKT         &mo 2
+        &kp LSHFT  &kp Z       &kp X             &kp C        &lt 8 V       &kp B                         &kp HOME   &kp PG_UP                                         &kp N         &lt 7 M        &kp COMMA     &kp DOT          &kp FSLH          &kp RSHFT
+        &mo 2      &kp GRAVE   &b_caps_word_lock &kp LEFT     &kp RIGHT              &lt 4 BSPC &kp DEL &kp END    &kp PG_DN  &lt 2 ENTER  &td_glaze                   &kp UP        &kp DOWN       &kp LBKT      &kp RBKT         &mo 2
             >;
         };
 
@@ -151,7 +160,7 @@
             >;
         };
 
-        // ============================================================================
+        // ============================================================================                           
         // Layer 5: GLAZE - GlazeWM window management (hold Space)
         // ============================================================================
         glaze_layer {
@@ -159,23 +168,23 @@
             bindings = <
         &trans  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &trans                                           &trans  &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)    &trans
         &trans  &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)   &trans                                           &trans  &trans      &kp LA(U)   &kp LA(I)   &kp LA(O)   &kp LA(P)     &trans
-        &kt LSHFT &kp LA(A) &kp LA(S)   &kp LA(D)   &kp LA(F)   &trans      &trans  &trans  &trans  &trans  &trans           &trans  &trans      &kp LA(J)   &kp LA(K)   &kp LA(L)   &kp LA(SEMI)  &trans
-        &trans  &trans      &trans      &trans      &kp LA(V)   &trans                      &trans  &trans                           &trans      &kp LA(M)   &trans      &trans      &trans        &kt RSHFT
+        &trans  &kp LA(A) &kp LA(S)   &kp LA(D)   &kp LA(F)   &trans      &trans  &trans  &trans  &trans  &trans           &trans  &trans      &kp LA(J)   &kp LA(K)   &kp LA(L)   &kp LA(SEMI)  &trans
+        &trans  &trans      &trans      &trans      &kp LA(V)   &trans                      &trans  &trans                           &trans      &kp LA(M)   &trans      &trans      &trans        &trans
         &trans  &trans      &trans      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans      &trans      &trans      &trans
             >;
         };
-
+        
         // ============================================================================
-        // Layer 6: MOUSE - Mouse operations (hold Del)
+        // Layer 6: GLAZE-Shift - GlazeWM window management (tap Space twice and hold)
         // ============================================================================
-        mouse_layer {
-            display-name = "Mouse";
+        glaze_layer {
+            display-name = "Glaze-Shift";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans  &trans   &trans          &trans          &trans        &trans           &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans  &trans   &mkp LCLK       &mkp MCLK       &mkp RCLK     &trans           &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                           &trans   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-        &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans   &trans          &trans          &trans        &trans
+        &trans  &kp LA(LSHFT(N1))  &kp LA(LSHFT(N2))  &kp LA(LSHFT(N3))  &kp LA(LSHFT(N4))  &kp LA(LSHFT(N5))  &trans                                           &trans  &kp LA(LSHFT(N6))  &kp LA(LSHFT(N7))  &kp LA(LSHFT(N8))  &kp LA(LSHFT(N9))  &kp LA(LSHFT(N0))    &trans
+        &trans  &kp LA(LSHFT(Q))   &kp LA(LSHFT(W))   &kp LA(LSHFT(E))   &kp LA(LSHFT(R))   &kp LA(LSHFT(T))   &trans                                           &trans  &trans      &kp LA(LSHFT(U))   &kp LA(LSHFT(I))   &kp LA(LSHFT(O))   &kp LA(LSHFT(P))     &trans
+        &trans  &kp LA(LSHFT(A))   &kp LA(LSHFT(S))   &kp LA(LSHFT(D))   &kp LA(LSHFT(F))   &trans             &trans  &trans  &trans  &trans  &trans           &trans  &trans      &kp LA(LSHFT(J))   &kp LA(LSHFT(K))   &kp LA(LSHFT(L))   &kp LA(LSHFT(SEMI))  &trans
+        &trans  &trans             &trans             &trans             &kp LA(LSHFT(V))   &trans                      &trans  &trans                           &trans      &kp LA(M)   &trans      &trans      &trans        &trans 
+        &trans  &trans             &trans             &trans             &trans                                &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans      &trans      &trans      &trans
             >;
         };
 
@@ -190,6 +199,20 @@
         &trans  &kp LC(W)      &kp LC(LS(W))  &kp LA(ENTER)      &kp LC(LA(L))  &kp LC(LS(F))  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &kp LC(FSLH)   &kp LC(D)      &kp LC(Y)          &kp LA(INS)    &kp LC(B)                      &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans         &trans         &trans             &trans                        &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+        
+        // ============================================================================
+        // Layer 8: MOUSE - Mouse operations (hold Del)
+        // ============================================================================
+        mouse_layer {
+            display-name = "Mouse";
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans  &trans   &trans          &trans          &trans        &trans           &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans  &trans   &mkp LCLK       &mkp MCLK       &mkp RCLK     &trans           &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                           &trans   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+        &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans   &trans          &trans          &trans        &trans
             >;
         };
     };
