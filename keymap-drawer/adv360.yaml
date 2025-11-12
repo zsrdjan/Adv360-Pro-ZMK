@@ -71,7 +71,7 @@ layers:
   - END
   - PG DN
   - {t: ENTER, h: Fn}
-  - '&td_glaze'
+  - {t: SPACE, h: Glaze}
   - UP
   - DOWN
   - '['
@@ -414,7 +414,7 @@ layers:
   - Alt+O
   - Alt+P
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Glaze-Shift, h: toggle}
   - Alt+A
   - Alt+S
   - Alt+D
@@ -431,7 +431,7 @@ layers:
   - Alt+K
   - Alt+L
   - Alt+;
-  - {t: ▽, type: trans}
+  - {t: Mouse, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -456,7 +456,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -491,7 +491,7 @@ layers:
   - Alt+LSHFT(O)
   - Alt+LSHFT(P)
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Glaze-Shift, h: toggle}
   - Alt+LSHFT(A)
   - Alt+LSHFT(S)
   - Alt+LSHFT(D)
@@ -508,7 +508,7 @@ layers:
   - Alt+LSHFT(K)
   - Alt+LSHFT(L)
   - Alt+LSHFT(SEMI)
-  - {t: ▽, type: trans}
+  - {t: Mouse, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
