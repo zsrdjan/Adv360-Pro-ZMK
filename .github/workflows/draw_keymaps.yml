@@ -7,7 +7,7 @@ on:
       - "config/*.keymap"
       - "config/*.dtsi"
       - "keymap_drawer.config.yaml"
-      # - 'config/boards/*/*/*.keymap'
+      # - 'boards/*/*/*.keymap'
 
 jobs:
   draw:
@@ -16,8 +16,6 @@ jobs:
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
-      amend_commit: true
-      commit_message: "[Draw] ${{ github.event.head_commit.message }}"
       keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files

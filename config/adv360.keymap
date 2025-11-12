@@ -159,8 +159,8 @@
             bindings = <
         &trans  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &trans                                           &trans  &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)    &trans
         &trans  &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)   &trans                                           &trans  &trans      &kp LA(U)   &kp LA(I)   &kp LA(O)   &kp LA(P)     &trans
-        &sk LSHFT &kp LA(A) &kp LA(S)   &kp LA(D)   &kp LA(F)   &trans      &trans  &trans  &trans  &trans  &trans           &trans  &trans      &kp LA(J)   &kp LA(K)   &kp LA(L)   &kp LA(SEMI)  &trans
-        &trans  &trans      &trans      &trans      &kp LA(V)   &trans                      &trans  &trans                           &trans      &kp LA(M)   &trans      &trans      &trans        &sk RSHFT
+        &kt LSHFT &kp LA(A) &kp LA(S)   &kp LA(D)   &kp LA(F)   &trans      &trans  &trans  &trans  &trans  &trans           &trans  &trans      &kp LA(J)   &kp LA(K)   &kp LA(L)   &kp LA(SEMI)  &trans
+        &trans  &trans      &trans      &trans      &kp LA(V)   &trans                      &trans  &trans                           &trans      &kp LA(M)   &trans      &trans      &trans        &kt RSHFT
         &trans  &trans      &trans      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans      &trans      &trans      &trans
             >;
         };
