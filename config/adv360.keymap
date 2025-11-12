@@ -159,7 +159,7 @@
             bindings = <
         &trans  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &trans                                           &trans  &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)    &trans
         &trans  &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)   &trans                                           &trans  &trans      &kp LA(U)   &kp LA(I)   &kp LA(O)   &kp LA(P)     &trans
-        &tog 6  &kp LA(A) &kp LA(S)   &kp LA(D)   &kp LA(F)   &trans      &trans  &trans  &trans  &trans  &trans           &trans  &trans      &kp LA(J)   &kp LA(K)   &kp LA(L)   &kp LA(SEMI)  &tog 8
+        &tog 6  &kp LA(A) &kp LA(S)   &kp LA(D)   &kp LA(F)   &tog 6      &trans  &trans  &trans  &trans  &trans           &trans  &tog 6      &kp LA(J)   &kp LA(K)   &kp LA(L)   &kp LA(SEMI)  &tog 6
         &trans  &trans      &trans      &trans      &kp LA(V)   &trans                      &trans  &trans                           &trans      &kp LA(M)   &trans      &trans      &trans        &trans
         &trans  &trans      &trans      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans      &trans      &trans      &trans
             >;
@@ -173,7 +173,7 @@
             bindings = <
         &trans  &kp LA(LS(N1))  &kp LA(LS(N2))  &kp LA(LS(N3))  &kp LA(LS(N4))  &kp LA(LS(N5))  &trans                                           &trans  &kp LA(LS(N6))  &kp LA(LS(N7))  &kp LA(LS(N8))  &kp LA(LS(N9))  &kp LA(LS(N0))    &trans
         &trans  &kp LA(LS(Q))   &kp LA(LS(W))   &kp LA(LS(E))   &kp LA(LS(R))   &kp LA(LS(T))   &trans                                           &trans  &trans      &kp LA(LS(U))   &kp LA(LS(I))   &kp LA(LS(O))   &kp LA(LS(P))     &trans
-        &tog 6  &kp LA(LS(A))   &kp LA(LS(S))   &kp LA(LS(D))   &kp LA(LS(F))   &trans             &trans  &trans  &trans  &trans  &trans           &trans  &trans      &kp LA(LS(J))   &kp LA(LS(K))   &kp LA(LS(L))   &kp LA(LS(SEMI))  &tog 8
+        &tog 6  &kp LA(LS(A))   &kp LA(LS(S))   &kp LA(LS(D))   &kp LA(LS(F))   &tog 6             &trans  &trans  &trans  &trans  &trans           &trans  &tog 6     &kp LA(LS(J))   &kp LA(LS(K))   &kp LA(LS(L))   &kp LA(LS(SEMI))  &tog 6
         &trans  &trans             &trans             &trans             &kp LA(LS(V))   &trans                      &trans  &trans                           &trans      &kp LA(LS(M))   &trans      &trans      &trans        &trans 
         &trans  &trans             &trans             &trans             &trans                                &trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans      &trans      &trans      &trans
             >;
