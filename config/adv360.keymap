@@ -35,7 +35,7 @@
               compatible = "zmk,behavior-tap-dance"; \
               #binding-cells = <0>; \
               tapping-term-ms = <320>; \
-              bindings = <&kp LC(LG(key))>, <&kp LC(LG(LS(key)))>; \
+              bindings = <&kp LA(key)>, <&kp LA(LS(key))>; \
           };
       
       // Number keys
