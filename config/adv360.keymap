@@ -28,8 +28,8 @@
 
       // Macro to create tap-dance behaviors for Glaze layer
       // Single tap: Alt+key, Double tap: Alt+Shift+key
-      #define TD_GLAZE(name, key) \
-          td_glaze_##name: td_glaze_##name { \
+      #define td_kom(name, key) \
+          td_kom_##name: td_kom_##name { \
               compatible = "zmk,behavior-tap-dance"; \
               #binding-cells = <0>; \
               tapping-term-ms = <320>; \
@@ -37,38 +37,38 @@
           };
       
       // Number keys
-      TD_GLAZE(1, N1)
-      TD_GLAZE(2, N2)
-      TD_GLAZE(3, N3)
-      TD_GLAZE(4, N4)
-      TD_GLAZE(5, N5)
-      TD_GLAZE(6, N6)
-      TD_GLAZE(7, N7)
-      TD_GLAZE(8, N8)
-      TD_GLAZE(9, N9)
-      TD_GLAZE(0, N0)
+      td_kom(1, N1)
+      td_kom(2, N2)
+      td_kom(3, N3)
+      td_kom(4, N4)
+      td_kom(5, N5)
+      td_kom(6, N6)
+      td_kom(7, N7)
+      td_kom(8, N8)
+      td_kom(9, N9)
+      td_kom(0, N0)
       
       // Letter keys
-      TD_GLAZE(q, Q)
-      TD_GLAZE(w, W)
-      TD_GLAZE(e, E)
-      TD_GLAZE(r, R)
-      TD_GLAZE(t, T)
-      TD_GLAZE(u, U)
-      TD_GLAZE(i, I)
-      TD_GLAZE(o, O)
-      TD_GLAZE(p, P)
-      TD_GLAZE(a, A)
-      TD_GLAZE(s, S)
-      TD_GLAZE(d, D)
-      TD_GLAZE(f, F)
-      TD_GLAZE(j, J)
-      TD_GLAZE(k, K)
-      TD_GLAZE(l, L)
-      TD_GLAZE(semi, SEMI)
-      TD_GLAZE(v, V)
-      TD_GLAZE(m, M)
-      TD_GLAZE(space, SPACE)
+      td_kom(q, Q)
+      td_kom(w, W)
+      td_kom(e, E)
+      td_kom(r, R)
+      td_kom(t, T)
+      td_kom(u, U)
+      td_kom(i, I)
+      td_kom(o, O)
+      td_kom(p, P)
+      td_kom(a, A)
+      td_kom(s, S)
+      td_kom(d, D)
+      td_kom(f, F)
+      td_kom(j, J)
+      td_kom(k, K)
+      td_kom(l, L)
+      td_kom(semi, SEMI)
+      td_kom(v, V)
+      td_kom(m, M)
+      td_kom(space, SPACE)
 
       // Home row mods - GACS (GUI/Alt/Ctrl/Shift) on left, SCAG on right
       hm: homerow_mods {
@@ -161,7 +161,7 @@
             bindings = <
         &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &tog 1                                              &mo 3  &kp F6        &kp F7      &kp F8         &kp F9   &kp F10       &kp F11       
         &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 &none                                               &none  &kp C_PREV    &kp C_PP    &kp C_NEXT     &trans   &trans        &trans
-        &trans  &kp F11 &kp F12 &trans  &trans  &trans  &none   &trans  &trans  &trans  &trans              &none  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP   &trans   &trans        &trans
+        &trans  &kp F11 &kp F12 &kp PSCRN &trans &trans &none   &trans  &trans  &trans  &trans              &none  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP   &trans   &trans        &trans
         &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                             &kp LEFT      &kp DOWN    &kp UP         &kp RIGHT  &trans      &trans
         &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans             &kp C_BRI_UP  &kp C_BRI_DN  &trans       &trans   &trans
             >;
@@ -196,16 +196,16 @@
         };
 
         // ============================================================================                           
-        // Layer 5: GLAZE - GlazeWM window management (hold Space)
+        // Layer 5: Komorobi - Komorobi window management (hold Space)
         // Single tap: Win+key, Double tap: Win+Shift+key
         // ============================================================================
         glaze_layer {
-            display-name = "Glaze";
+            display-name = "Komorobi";
             bindings = <
-        &trans  &td_glaze_1  &td_glaze_2  &td_glaze_3  &td_glaze_4  &td_glaze_5  &trans                                           &trans  &td_glaze_6  &td_glaze_7  &td_glaze_8  &td_glaze_9  &td_glaze_0     &trans
-        &trans  &td_glaze_q  &td_glaze_w  &td_glaze_e  &td_glaze_r  &td_glaze_t  &trans                                           &trans  &trans       &td_glaze_u  &td_glaze_i  &td_glaze_o  &td_glaze_p     &trans
-        &trans  &td_glaze_a  &td_glaze_s  &td_glaze_d  &td_glaze_f  &trans       &trans  &trans  &trans  &trans  &trans           &trans  &trans       &td_glaze_j  &td_glaze_k  &td_glaze_l  &td_glaze_semi  &trans
-        &trans  &trans       &trans       &trans       &td_glaze_v  &trans                       &trans  &trans                           &trans       &td_glaze_m  &td_glaze_space &trans    &trans          &trans
+        &trans  &td_kom_1  &td_kom_2  &td_kom_3  &td_kom_4  &td_kom_5  &trans                                           &trans  &td_kom_6  &td_kom_7  &td_kom_8  &td_kom_9  &td_kom_0     &trans
+        &trans  &td_kom_q  &td_kom_w  &td_kom_e  &td_kom_r  &td_kom_t  &trans                                           &trans  &trans       &td_kom_u  &td_kom_i  &td_kom_o  &td_kom_p     &trans
+        &trans  &td_kom_a  &td_kom_s  &td_kom_d  &td_kom_f  &trans       &trans  &trans  &trans  &trans  &trans           &trans  &trans       &td_kom_j  &td_kom_k  &td_kom_l  &td_kom_semi  &trans
+        &trans  &trans       &trans       &trans       &td_kom_v  &trans                       &trans  &trans                           &trans       &td_kom_m  &td_kom_space &trans    &trans          &trans
         &trans  &trans       &trans       &trans       &trans                    &trans  &trans  &trans  &trans  &trans  &trans           &trans       &trans       &trans       &trans       &trans
             >;
         };
