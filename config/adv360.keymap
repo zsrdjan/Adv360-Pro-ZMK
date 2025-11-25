@@ -26,8 +26,8 @@
       #include "macros.dtsi"
       #include "version.dtsi"
 
-      // Macro to create tap-dance behaviors for Glaze layer
-      // Single tap: Alt+key, Double tap: Alt+Shift+key
+      // Macro to create tap-dance behaviors for Komorobi layer
+      // Single tap: LWin+key, Double tap: LWin+Shift+key
       #define td_kom(name, key) \
           td_kom_##name: td_kom_##name { \
               compatible = "zmk,behavior-tap-dance"; \
@@ -36,7 +36,30 @@
               bindings = <&kp LG(key)>, <&kp LG(LS(key))>; \
           };
       
-      // Number keys
+      // Focus/Move window keys
+      td_kom(m, M)
+      td_kom(comma, COMMA)
+      td_kom(period, PERIOD)
+      td_kom(slash, SLASH)
+      td_kom(lbracket, LBRACKET)
+      td_kom(rbracket, RBRACKET)
+      
+      // Resize keys
+      td_kom(o, O)
+      td_kom(i, I)
+      
+      // Window manipulation
+      td_kom(quote, SQT)
+      td_kom(t, T)
+      td_kom(f, F)
+      
+      // Layout & control
+      td_kom(r, R)
+      td_kom(p, P)
+      td_kom(x, X)
+      td_kom(y, Y)
+      
+      // Workspace keys
       td_kom(1, N1)
       td_kom(2, N2)
       td_kom(3, N3)
@@ -45,30 +68,15 @@
       td_kom(6, N6)
       td_kom(7, N7)
       td_kom(8, N8)
-      td_kom(9, N9)
-      td_kom(0, N0)
       
-      // Letter keys
+      // Arrow keys for navigation
+      td_kom(left, LEFT)
+      td_kom(down, DOWN)
+      td_kom(up, UP)
+      td_kom(right, RIGHT)
+      
+      // Q for close
       td_kom(q, Q)
-      td_kom(w, W)
-      td_kom(e, E)
-      td_kom(r, R)
-      td_kom(t, T)
-      td_kom(u, U)
-      td_kom(i, I)
-      td_kom(o, O)
-      td_kom(p, P)
-      td_kom(a, A)
-      td_kom(s, S)
-      td_kom(d, D)
-      td_kom(f, F)
-      td_kom(j, J)
-      td_kom(k, K)
-      td_kom(l, L)
-      td_kom(semi, SEMI)
-      td_kom(v, V)
-      td_kom(m, M)
-      td_kom(space, SPACE)
 
       // Home row mods - GACS (GUI/Alt/Ctrl/Shift) on left, SCAG on right
       hm: homerow_mods {
