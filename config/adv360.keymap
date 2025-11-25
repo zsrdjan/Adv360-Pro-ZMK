@@ -41,8 +41,8 @@
       td_kom(comma, COMMA)
       td_kom(period, PERIOD)
       td_kom(slash, SLASH)
-      td_kom(lbracket, LBRACKET)
-      td_kom(rbracket, RBRACKET)
+      td_kom(lbracket, LBKT)
+      td_kom(rbracket, RBKT)
       
       // Resize keys
       td_kom(o, O)
@@ -210,11 +210,11 @@
         glaze_layer {
             display-name = "Komorobi";
             bindings = <
-        &trans  &td_kom_1  &td_kom_2  &td_kom_3  &td_kom_4  &td_kom_5  &trans                                           &trans  &td_kom_6  &td_kom_7  &td_kom_8  &td_kom_9  &td_kom_0     &trans
-        &trans  &td_kom_q  &td_kom_w  &td_kom_e  &td_kom_r  &td_kom_t  &trans                                           &trans  &trans       &td_kom_u  &td_kom_i  &td_kom_o  &td_kom_p     &trans
-        &trans  &td_kom_a  &td_kom_s  &td_kom_d  &td_kom_f  &trans       &trans  &trans  &trans  &trans  &trans           &trans  &trans       &td_kom_j  &td_kom_k  &td_kom_l  &td_kom_semi  &trans
-        &trans  &trans       &trans       &trans       &td_kom_v  &trans                       &trans  &trans                           &trans       &td_kom_m  &td_kom_space &trans    &trans          &trans
-        &trans  &trans       &trans       &trans       &trans                    &trans  &trans  &trans  &trans  &trans  &trans           &trans       &trans       &trans       &trans       &trans
+        &trans  &td_kom_1      &td_kom_2      &td_kom_3   &td_kom_4   &td_kom_5   &trans                                           &trans  &td_kom_6      &td_kom_7   &td_kom_8      &trans         &trans            &trans
+        &trans  &td_kom_q      &trans         &trans      &td_kom_r   &td_kom_t   &trans                                           &trans  &trans         &trans      &td_kom_i      &td_kom_o      &td_kom_p         &trans
+        &trans  &trans         &trans         &trans      &td_kom_f   &trans      &trans  &trans  &trans  &trans  &trans           &trans  &trans         &trans      &trans         &trans         &td_kom_quote     &trans
+        &trans  &trans         &td_kom_x      &trans      &trans      &trans                      &trans  &trans                           &trans         &td_kom_m   &td_kom_comma  &td_kom_period &td_kom_slash     &trans
+        &trans  &trans         &trans         &td_kom_left &td_kom_right          &trans  &trans  &trans  &trans  &trans  &trans           &td_kom_up     &td_kom_down &td_kom_lbracket &td_kom_rbracket &trans
             >;
         };
 
