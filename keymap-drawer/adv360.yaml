@@ -71,7 +71,7 @@ layers:
   - END
   - PG DN
   - {t: ENTER, h: Fn}
-  - {t: SPACE, h: Glaze}
+  - {t: SPACE, h: Komorobi}
   - UP
   - DOWN
   - '['
@@ -186,7 +186,7 @@ layers:
   - {t: ▽, type: trans}
   - F11
   - F12
-  - {t: ▽, type: trans}
+  - PSCRN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -385,64 +385,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Glaze:
+  Komorobi:
   - {t: ▽, type: trans}
-  - '&td_glaze_1'
-  - '&td_glaze_2'
-  - '&td_glaze_3'
-  - '&td_glaze_4'
-  - '&td_glaze_5'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_6'
-  - '&td_glaze_7'
-  - '&td_glaze_8'
-  - '&td_glaze_9'
-  - '&td_glaze_0'
+  - '&td_kom_1'
+  - '&td_kom_2'
+  - '&td_kom_3'
+  - '&td_kom_4'
+  - '&td_kom_5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&td_glaze_q'
-  - '&td_glaze_w'
-  - '&td_glaze_e'
-  - '&td_glaze_r'
-  - '&td_glaze_t'
+  - '&td_kom_6'
+  - '&td_kom_7'
+  - '&td_kom_8'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&td_glaze_u'
-  - '&td_glaze_i'
-  - '&td_glaze_o'
-  - '&td_glaze_p'
+  - {t: ▽, type: trans}
+  - '&td_kom_q'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&td_glaze_a'
-  - '&td_glaze_s'
-  - '&td_glaze_d'
-  - '&td_glaze_f'
+  - '&td_kom_r'
+  - '&td_kom_t'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&td_kom_i'
+  - '&td_kom_o'
+  - '&td_kom_p'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_j'
-  - '&td_glaze_k'
-  - '&td_glaze_l'
-  - '&td_glaze_semi'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_v'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_m'
-  - '&td_glaze_space'
+  - '&td_kom_f'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -451,16 +427,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&td_kom_quote'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&td_kom_x'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&td_kom_m'
+  - '&td_kom_comma'
+  - '&td_kom_period'
+  - '&td_kom_slash'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&td_kom_left'
+  - '&td_kom_right'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&td_kom_up'
+  - '&td_kom_down'
+  - '&td_kom_lbracket'
+  - '&td_kom_rbracket'
   - {t: ▽, type: trans}
   Dev:
   - {t: ▽, type: trans}
