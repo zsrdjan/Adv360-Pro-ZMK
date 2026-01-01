@@ -26,50 +26,6 @@
       #include "macros.dtsi"
       #include "version.dtsi"
 
-      // Macro to create tap-dance behaviors for Glaze layer
-      // Single tap: Alt+key, Double tap: Alt+Shift+key
-      #define TD_GLAZE(name, key) \
-          td_glaze_##name: td_glaze_##name { \
-              compatible = "zmk,behavior-tap-dance"; \
-              #binding-cells = <0>; \
-              tapping-term-ms = <320>; \
-              bindings = <&kp LC(LA(key))>, <&kp LC(LA(LS(key)))>; \
-          };
-      
-      // Number keys
-      TD_GLAZE(1, N1)
-      TD_GLAZE(2, N2)
-      TD_GLAZE(3, N3)
-      TD_GLAZE(4, N4)
-      TD_GLAZE(5, N5)
-      TD_GLAZE(6, N6)
-      TD_GLAZE(7, N7)
-      TD_GLAZE(8, N8)
-      TD_GLAZE(9, N9)
-      TD_GLAZE(0, N0)
-      
-      // Letter keys
-      TD_GLAZE(q, Q)
-      TD_GLAZE(w, W)
-      TD_GLAZE(e, E)
-      TD_GLAZE(r, R)
-      TD_GLAZE(t, T)
-      TD_GLAZE(u, U)
-      TD_GLAZE(i, I)
-      TD_GLAZE(o, O)
-      TD_GLAZE(p, P)
-      TD_GLAZE(a, A)
-      TD_GLAZE(s, S)
-      TD_GLAZE(d, D)
-      TD_GLAZE(f, F)
-      TD_GLAZE(j, J)
-      TD_GLAZE(k, K)
-      TD_GLAZE(l, L)
-      TD_GLAZE(semi, SEMI)
-      TD_GLAZE(v, V)
-      TD_GLAZE(m, M)
-      TD_GLAZE(space, SPACE)
-
       // Home row mods - GACS (GUI/Alt/Ctrl/Shift) on left, SCAG on right
       hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
@@ -134,8 +90,8 @@
         &kp EQUAL  &kp N1      &kp N2            &kp N3       &kp N4        &kp N5  &tog 1                                                                      &mo 3  &kp N6        &kp N7         &kp N8        &kp N9           &kp N0            &kp MINUS
         &kp TAB    &kp Q       &kp W             &kp E        &kp R         &kp T   &none                                                                       &none  &kp Y         &kp U          &kp I         &kp O            &kp P             &kp BSLH
         &kp ESC    &hm LGUI A  &hm LALT S        &hm LCTRL D  &hm LSHFT F   &kp G   &none      &kp LCTRL  &kp LALT   &kp LGUI   &kp RCTRL                      &none   &kp H         &hm RSHFT J    &hm RCTRL K   &hm RALT L       &hm RGUI SEMI     &kp SQT
-        &kp LSHFT  &kp Z       &kp X             &kp C        &lt 7 V       &kp B                         &kp HOME   &kp PG_UP                                         &kp N         &lt 6 M        &kp COMMA     &kp DOT          &kp FSLH          &kp RSHFT
-        &mo 2      &kp GRAVE   &b_caps_word_lock &kp LEFT     &kp RIGHT              &lt 4 BSPC &kp DEL &kp END    &kp PG_DN  &lt 2 ENTER  &lt 5 SPACE                   &kp UP        &kp DOWN       &kp LBKT      &kp RBKT         &mo 2
+        &kp LSHFT  &kp Z       &kp X             &kp C        &lt 6 V       &kp B                         &kp HOME   &kp PG_UP                                         &kp N         &lt 5 M        &kp COMMA     &kp DOT          &kp FSLH          &kp RSHFT
+        &mo 2      &kp GRAVE   &b_caps_word_lock &kp LEFT     &kp RIGHT              &lt 4 BSPC &lt 2 DEL &kp END    &kp PG_DN  &lt 2 ENTER  &kp SPACE                 &kp UP        &kp DOWN       &kp LBKT      &kp RBKT         &mo 2
             >;
         };
 
@@ -145,25 +101,25 @@
         keypad {
             display-name = "Kp";
             bindings = <
-        &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                                 &mo 3  &kp N6  &kp KP_NUM      &kp KP_EQUAL   &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-        &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                  &none  &kp Y   &kp KP_N7       &kp KP_N8      &kp KP_N9      &kp KP_MINUS     &kp BSLH
-        &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none      &kp LCTRL  &kp LALT   &kp LGUI   &kp RCTRL                 &none  &kp H   &kp KP_N4       &kp KP_N5      &kp KP_N6      &kp KP_PLUS      &kp SQT
-        &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME   &kp PG_UP                                    &kp N   &kp KP_N1       &kp KP_N2      &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-        &mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT           &kp BSPC   &kp DEL   &kp END    &kp PG_DN  &kp ENTER    &kp KP_N0               &kp UP          &kp DOWN       &kp KP_DOT     &kp RBKT         &mo 2
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                            &trans  &trans  &kp KP_NUM   &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                            &trans  &trans  &kp KP_N7    &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                            &trans  &trans  &kp KP_N4    &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
+        &trans  &trans  &trans  &trans  &kp V   &trans                  &trans  &trans                                            &trans  &kp KP_N1    &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+        &trans  &trans  &trans  &trans &trans           &kp BSPC &kp DEL &trans &trans  &kp ENTER  &kp KP_N0                      &trans  &trans       &kp KP_DOT    &trans         &trans
             >;
         };
 
         // ============================================================================
-        // Layer 2: Fn - Function layer (hold Backspace)
+        // Layer 2: Fn - Function layer (hold Enter or Del)
         // ============================================================================
         fn {
             display-name = "Fn";
             bindings = <
-        &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &tog 1                                              &mo 3  &kp F6        &kp F7      &kp F8         &kp F9   &kp F10       &kp F11       
-        &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 &none                                               &none  &kp C_PREV    &kp C_PP    &kp C_NEXT     &trans   &trans        &trans
-        &trans  &kp F11 &kp F12 &trans  &trans  &trans  &none   &trans  &trans  &trans  &trans              &none  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP   &trans   &trans        &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                             &kp LEFT      &kp DOWN    &kp UP         &kp RIGHT  &trans      &trans
-        &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans             &kp C_BRI_UP  &kp C_BRI_DN  &trans       &trans   &trans
+        &trans  &kp F1       &kp F2       &kp F3        &kp F4        &kp F5   &tog 1                                             &mo 3   &kp F6        &kp F7         &kp F8         &kp F9        &kp F10       &kp F11
+        &kp F12 &trans       &trans       &trans        &trans        &trans  &none                                               &none   &kp C_PREV    &kp C_PP       &kp C_NEXT     &trans        &trans        &trans
+        &trans  &trans       &trans       &trans        &trans        &trans  &none   &trans  &trans  &trans  &trans              &none   &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP   &trans        &trans        &trans
+        &trans  &trans       &trans       &trans        &trans        &trans                   &trans  &trans                             &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT     &trans        &trans
+        &trans  &trans       &trans       &trans        &trans                 &trans  &trans  &trans  &trans  &trans  &trans             &kp C_BRI_UP  &kp C_BRI_DN   &trans         &trans        &trans
             >;
         };
 
@@ -191,27 +147,12 @@
         &trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &trans  &trans        &kp HOME       &kp PG_UP      &kp END       &trans      &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &kp BSPC      &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT   &trans
         &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                           &kp LC(LEFT)  &kp LC(RIGHT)  &kp PG_DN      &kp DEL       &trans      &trans
-        &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &mo 7   &trans           &kp LC(HOME)  &kp LC(END)    &trans         &trans        &trans
-            >;
-        };
-
-        // ============================================================================                           
-        // Layer 5: GLAZE - GlazeWM window management (hold Space)
-        // Single tap: Win+key, Double tap: Win+Shift+key
-        // ============================================================================
-        glaze_layer {
-            display-name = "Glaze";
-            bindings = <
-        &trans  &td_glaze_1  &td_glaze_2  &td_glaze_3  &td_glaze_4  &td_glaze_5  &trans                                           &trans  &td_glaze_6  &td_glaze_7  &td_glaze_8  &td_glaze_9  &td_glaze_0     &trans
-        &trans  &td_glaze_q  &td_glaze_w  &td_glaze_e  &td_glaze_r  &td_glaze_t  &trans                                           &trans  &trans       &td_glaze_u  &td_glaze_i  &td_glaze_o  &td_glaze_p     &trans
-        &trans  &td_glaze_a  &td_glaze_s  &td_glaze_d  &td_glaze_f  &trans       &trans  &trans  &trans  &trans  &trans           &trans  &trans       &td_glaze_j  &td_glaze_k  &td_glaze_l  &td_glaze_semi  &trans
-        &trans  &trans       &trans       &trans       &td_glaze_v  &trans                       &trans  &trans                           &trans       &td_glaze_m  &td_glaze_space &trans    &trans          &trans
-        &trans  &trans       &trans       &trans       &trans                    &trans  &trans  &trans  &trans  &trans  &trans           &trans       &trans       &trans       &trans       &trans
+        &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &mo 6   &trans           &kp LC(HOME)  &kp LC(END)    &trans         &trans        &trans
             >;
         };
 
         // ============================================================================
-        // Layer 6: DEV - IDE shortcuts (hold Enter while in NAV layer)
+        // Layer 5: DEV - IDE shortcuts (hold M key)
         // ============================================================================
         dev_layer {
             display-name = "Dev";
@@ -225,7 +166,7 @@
         };
         
         // ============================================================================
-        // Layer 7: MOUSE - Mouse operations (hold Del)
+        // Layer 6: MOUSE - Mouse operations (hold V key)
         // ============================================================================
         mouse_layer {
             display-name = "Mouse";
