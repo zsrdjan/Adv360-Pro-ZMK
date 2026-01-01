@@ -27,7 +27,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - '&td_p_pscrn'
   - \
   - ESC
   - {t: A, h: LGUI}
@@ -177,11 +177,11 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
+  - {t: ▽, type: trans}
   - PREV
   - PP
   - NEXT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PSCRN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -195,6 +195,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
+  - {t: ▽, type: trans}
   - VOL DN
   - MUTE
   - VOL UP
@@ -209,10 +210,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - BRI UP
+  - BRI DN
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -226,8 +226,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BRI UP
-  - BRI DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -335,6 +335,7 @@ layers:
   - HOME
   - PG UP
   - END
+  - PSCRN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -349,7 +350,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BSPC
   - LEFT
   - DOWN
   - UP
@@ -363,10 +363,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Ctl+LEFT
   - Ctl+RIGHT
   - PG DN
-  - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -539,6 +539,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-combos:
-- p: [37, 38]
-  k: ESC
