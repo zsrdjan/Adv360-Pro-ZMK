@@ -67,93 +67,93 @@ layers:
   - LEFT
   - RIGHT
   - {t: BSPC, h: Nav}
-  - DEL
+  - {t: DEL, h: Fn}
   - END
   - PG DN
   - {t: ENTER, h: Fn}
-  - {t: SPACE, h: Glaze}
+  - SPACE
   - UP
   - DOWN
   - '['
   - ']'
   - Fn
   Kp:
-  - '='
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
   - {t: ▽, type: trans}
-  - Mod
-  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - KP NUM
   - KP EQUAL
   - KP DIVIDE
   - KP MULTIPLY
-  - '-'
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - ''
-  - ''
-  - Y
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - KP 7
   - KP 8
   - KP 9
   - KP MINUS
-  - \
-  - ESC
-  - A
-  - S
-  - D
-  - F
-  - G
-  - ''
-  - LCTRL
-  - LALT
-  - LGUI
-  - RCTRL
-  - ''
-  - H
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - KP 4
   - KP 5
   - KP 6
   - KP PLUS
-  - ''''
-  - LSHFT
-  - Z
-  - X
-  - C
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - V
-  - B
-  - HOME
-  - PG UP
-  - N
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - KP 1
   - KP 2
   - KP 3
   - KP ENTER
-  - RSHFT
-  - Fn
-  - '`'
-  - CAPS
-  - LEFT
-  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BSPC
   - DEL
-  - END
-  - PG DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ENTER
   - KP 0
-  - UP
-  - DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - KP DOT
-  - ']'
-  - Fn
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Fn:
   - {t: ▽, type: trans}
   - F1
@@ -169,12 +169,12 @@ layers:
   - F9
   - F10
   - F11
+  - F12
   - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - PREV
@@ -184,8 +184,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F11
-  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -382,83 +382,6 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+HOME
   - Ctl+END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Glaze:
-  - {t: ▽, type: trans}
-  - '&td_glaze_1'
-  - '&td_glaze_2'
-  - '&td_glaze_3'
-  - '&td_glaze_4'
-  - '&td_glaze_5'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_6'
-  - '&td_glaze_7'
-  - '&td_glaze_8'
-  - '&td_glaze_9'
-  - '&td_glaze_0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_q'
-  - '&td_glaze_w'
-  - '&td_glaze_e'
-  - '&td_glaze_r'
-  - '&td_glaze_t'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_u'
-  - '&td_glaze_i'
-  - '&td_glaze_o'
-  - '&td_glaze_p'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_a'
-  - '&td_glaze_s'
-  - '&td_glaze_d'
-  - '&td_glaze_f'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_j'
-  - '&td_glaze_k'
-  - '&td_glaze_l'
-  - '&td_glaze_semi'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_v'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_glaze_m'
-  - '&td_glaze_space'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
